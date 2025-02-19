@@ -1,0 +1,42 @@
+/* About Section */
+#about {
+    background-color: rgb(69, 68, 68);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    max-width: 950px;
+    margin: 0 auto;
+   
+}
+
+#about h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 2;
+    color: #cccccc;
+}
+#about a{
+   color: red; 
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
