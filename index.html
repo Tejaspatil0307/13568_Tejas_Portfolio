@@ -18,7 +18,9 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
-            <div class="logo"><h1><b><i>Tejas Patil</i></b></h1></div>
+            <div class="logo">
+                <h1><b><i>Tejas Patil</i></b></h1>
+            </div>
             <div class="hamburger" id="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -41,8 +43,8 @@
             <span id="element"></span>
 
             <div>
-            <a href="/images/tejas resume (3).pdf" download="/images/tejas resume (3).pdf">
-                <button id="cvButton">Download CV</button>
+                <a href="/images/tejas resume (3).pdf" download="/images/tejas resume (3).pdf">
+                    <button id="cvButton">Download CV</button>
             </div>
 
             </a>
@@ -52,19 +54,20 @@
             <img src="images/Tejas.jpg" alt="Profile Picture">
         </div>
     </section>
-    
+
 
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
         <p>Hello, I’m Tejas R. Patil, a Computer Science graduate from MGM College of Engineering with hands-on
             expertise in Python, Java, and data analytics <a href="/images/Certfications.pdf"
-                target="_blank"><i><b>Certificates</b></i></a>. I’ve built projects ranging from management systems to ML-based
+                target="_blank"><i><b>Certificates</b></i></a>. I’ve built projects ranging from management systems to
+            ML-based
             models for cancer detection and stock market prediction<a href="https://github.com/Tejaspatil0307"
-            target="_blank"><i><b><i><b>Projects</b></i></a>. My internship as a Python Developer at Mira
+                target="_blank"><i><b><i><b>Projects</b></i></a>. My internship as a Python Developer at Mira
             Advanced Engineering further sharpened my skills. Outside of tech, I actively engage in sports and the arts,
             earning several awards. Welcome to my portfolio!</p>
-            
+
 
 
     </section>
@@ -138,11 +141,12 @@
     <!-- Footer Section -->
     <footer>
         <div id="media">
-            <a href="https://github.com/Tejaspatil0307"><img src="./images/icons/github.png" alt="Github" title="Github"></a>
+            <a href="https://github.com/Tejaspatil0307"><img src="./images/icons/github.png" alt="Github"
+                    title="Github"></a>
             <!-- <a href="https://www.instagram.com/tejas_patil_9879?igsh=OHVlenhvNnQyYWsz&utm_source=qr" title="Instagram"><img -->
-                    <!-- src="./images/icons/instagram.png" alt="reddit"></a> -->
-            <a href="https://www.linkedin.com/in/tejas-rajesh-patil-90948328a/" title="Linkdin"><img src="./images/icons/linkedin.png"
-                    alt="Linkdin"></a>
+            <!-- src="./images/icons/instagram.png" alt="reddit"></a> -->
+            <a href="https://www.linkedin.com/in/tejas-rajesh-patil-90948328a/" title="Linkdin"><img
+                    src="./images/icons/linkedin.png" alt="Linkdin"></a>
             <!-- <a href="https://snapchat.com/t/mfkCt1Kw"><img src="./images/icons/snapchat.png" alt="dev.to" title="Snapchat"></a> -->
 
         </div>
@@ -154,16 +158,26 @@
     </footer>
 
 
-    
+
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: [ '&amp; a Java Full Stack Developer.'],
-      typeSpeed: 70,
-    });
-  </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['&amp; a Java Full Stack Developer.'],
+            typeSpeed: 70,
+        });
+        //media query handburgar
+        document.getElementById('hamburger').addEventListener('click', function () {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+        // event 
+        document.getElementById('cvButton').addEventListener('click', function() {
+    alert('CV Downloaded!'); // Replace with actual download functionality
+});
+
+    </script>
 </body>
 
 </html>

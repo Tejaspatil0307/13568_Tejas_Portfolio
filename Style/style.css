@@ -187,8 +187,24 @@ button#cvButton {
         margin-left: 0; /* Remove horizontal margin */
     }
 
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when 'active' class is added */
+    }
+
     .hamburger {
-        display: flex;
+        display: flex; /* Show hamburger icon on mobile */
     }
 
     /* Hero Section */
